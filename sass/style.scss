@@ -1,0 +1,20 @@
+/* The original design is from https://symu.co/freebies/templates-4/westa-psd-template-and-mobile-app/
+**Every single line of code is by me.** Every aspect of the implementation, solution etc.
+Check me out at https://github.com/rain-light/
+Repo link https://github.com/rain-light/westa */
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/misc";
+@import "components/cards";
+
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/footer";
+
+@import "pages/home";
