@@ -8,6 +8,13 @@
 
 html {
     font-size: calc((0.0031319356168835 * 100vw) + 5.9865946249801px);
+    /*
+        1920, 12
+        1520, 10.75
+        1120, 9.5
+        729, 8.25
+        320, 7
+    */
     
     /* This curve has a medium of 9.5px and is an experimental attempt
     to make the root font size fluidly responsive instead of making

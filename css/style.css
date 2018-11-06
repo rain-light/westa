@@ -31,6 +31,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 html {
   font-size: calc((0.0031319356168835 * 100vw) + 5.9865946249801px);
+  /*
+        1920, 12
+        1520, 10.75
+        1120, 9.5
+        729, 8.25
+        320, 7
+    */
   /* This curve has a medium of 9.5px and is an experimental attempt
     to make the root font size fluidly responsive instead of making
     it change with media queries at certain breakpoints. */
@@ -69,7 +76,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 16rem;
+  width: 20rem;
 }
 
 .logo__image {
@@ -78,7 +85,7 @@ body {
 
 .logo__text {
   color: #fff;
-  font-size: 1.9rem;
+  font-size: 2.4rem;
 }
 
 /* SEPARATOR COMPONENT */
@@ -87,6 +94,33 @@ body {
   height: 1.6rem;
   background-color: #7D7C78;
   margin: 0 2.5rem;
+}
+
+/* PHONE NUMBER */
+.phone-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 13rem;
+}
+
+.phone-number__text {
+  color: #fff;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.icon--gray {
+  fill: #A7A7A5;
 }
 
 .header {
@@ -119,7 +153,6 @@ body {
 }
 
 .navigation__left {
-  background-color: deepskyblue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,5 +173,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.navigation__search {
+  margin: 0 2.8rem;
 }
 /*# sourceMappingURL=style.css.map */

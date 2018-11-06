@@ -13,12 +13,15 @@
         <nav class="navigation">
             <div class="navigation__left">
                 <div class="logo">
-                    <img src="/img/logo.png" alt="Westa Logo" class="logo__image">
+                    <img src="/img/logo-big.png" alt="Westa Logo" class="logo__image">
                     <span class="logo__text">Westa Bank</span>
                 </div>
                 <div class="separator"></div>
                 <div class="phone-number">
-                    Number
+                    <svg class="icon icon--gray phone-number__icon">
+                        <use xlink:href="/img/sprite.svg#icon-phone"></use>
+                    </svg>
+                    <span class="phone-number__text">600-300-200</span>
                 </div>
             </div>
             <div class="navigation__right">
@@ -46,7 +49,9 @@
                     </li>
                 </ul>
                 <div class="navigation__search">
-                    Ico
+                    <svg class="icon icon--gray">
+                        <use xlink:href="/img/sprite.svg#icon-search"></use>
+                    </svg>
                 </div>
                 <div class="navigation__buttons">
                     <a href="#" class="btn btn--transparent">Sign In</a>
