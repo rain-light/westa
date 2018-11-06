@@ -1,0 +1,24 @@
+/* LOGO COMPONENT */
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 16rem;
+
+    &__image {
+        max-width: 4.5rem;
+    }
+
+    &__text {
+        color: #fff;
+        font-size: 1.9rem;
+    }
+}
+
+/* SEPARATOR COMPONENT */
+.separator {
+    width: 1px;
+    height: 1.6rem;
+    background-color: #7D7C78;
+    margin: 0 2.5rem;
+}

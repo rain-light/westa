@@ -1,0 +1,144 @@
+/* The original design is from https://symu.co/freebies/templates-4/westa-psd-template-and-mobile-app/
+**Every single line of code is by me.** Every aspect of the implementation, solution etc.
+Check me out at https://github.com/rain-light/
+Repo link https://github.com/rain-light/westa */
+/* COLORS */
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: calc((0.0031319356168835 * 100vw) + 5.9865946249801px);
+  /* This curve has a medium of 9.5px and is an experimental attempt
+    to make the root font size fluidly responsive instead of making
+    it change with media queries at certain breakpoints. */
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Metropolis', sans-serif;
+}
+
+/* Font weight classes */
+.u-text-100 {
+  font-weight: 100 !important;
+}
+
+.u-text-300 {
+  font-weight: 300 !important;
+}
+
+.u-text-700 {
+  font-weight: 700 !important;
+}
+
+.u-text-900 {
+  font-weight: 900 !important;
+}
+
+/* LOGO COMPONENT */
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 16rem;
+}
+
+.logo__image {
+  max-width: 4.5rem;
+}
+
+.logo__text {
+  color: #fff;
+  font-size: 1.9rem;
+}
+
+/* SEPARATOR COMPONENT */
+.separator {
+  width: 1px;
+  height: 1.6rem;
+  background-color: #7D7C78;
+  margin: 0 2.5rem;
+}
+
+.header {
+  height: 60rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/img/header-small.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/header-small.png);
+  background-size: cover;
+  background-position: center 70%;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  .header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/img/header.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/header.png);
+  }
+}
+
+.navigation {
+  padding: 4rem;
+  border-bottom: 1px solid #7D7C78;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation__left {
+  background-color: deepskyblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation__right {
+  background-color: deeppink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */

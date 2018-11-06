@@ -1,0 +1,43 @@
+/* Metropolis Regular */
+
+@font-face {
+    font-family: 'Metropolis';
+    src:    url('/resources/WOFF2/Metropolis-Regular.woff2') format('woff2'),
+            url('/resources/WOFF/Metropolis-Regular.woff') format('woff');
+}
+
+/* Metropolis Thin */
+
+@font-face {
+    font-family: 'Metropolis';
+    src:    url('/resources/WOFF2/Metropolis-Thin.woff2') format('woff2'),
+            url('/resources/WOFF/Metropolis-Thin.woff') format('woff');
+    font-weight: 100;
+}
+
+/* Metropolis Light */
+
+@font-face {
+    font-family: 'Metropolis';
+    src:    url('/resources/WOFF2/Metropolis-Light.woff2') format('woff2'),
+            url('/resources/WOFF/Metropolis-Light.woff') format('woff');
+    font-weight: 300;
+}
+
+/* Metropolis Bold */
+
+@font-face {
+    font-family: 'Metropolis';
+    src:    url('/resources/WOFF2/Metropolis-Bold.woff2') format('woff2'),
+            url('/resources/WOFF/Metropolis-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+/* Metropolis ExtraBold */
+
+@font-face {
+    font-family: 'Metropolis';
+    src:    url('/resources/WOFF2/Metropolis-ExtraBold.woff2') format('woff2'),
+            url('/resources/WOFF/Metropolis-ExtraBold.woff') format('woff');
+    font-weight: 900;
+}

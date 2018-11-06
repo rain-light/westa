@@ -1,0 +1,24 @@
+.navigation {
+    padding: 4rem;
+    border-bottom: 1px solid #7D7C78;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left {
+        background-color: deepskyblue;
+        display: flex;
+        align-items: center;
+    }
+
+    &__right {
+        background-color: deeppink;
+        display: flex;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+    }
+}
