@@ -1,0 +1,60 @@
+.btn,
+.btn:link,
+.btn:visited {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 1.2rem 4.5rem;
+    border-radius: 30px;
+}
+
+.btn--primary,
+.btn--primary:link,
+.btn--primary:visited {
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(to right, $color-primary, $color-primary-dark);
+
+    &::after,
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        transition: opacity .4s;
+    }
+
+    &::before {
+        background-image: linear-gradient(to right, $color-primary, $color-primary-dark);
+        opacity: 1;
+    }
+
+    &::after {
+        background-image: linear-gradient(to left, $color-primary, $color-primary-dark);
+        opacity: 0;
+    }
+    
+    &:hover {
+        
+        &::before {
+            opacity: 0;
+        }
+
+        &::after {
+            opacity: 1;
+        }
+    }
+}
+
+.btn--transparent,
+.btn--transparent:link,
+.btn--transparent:visited {
+    border: 1px solid $color-gray;
+}

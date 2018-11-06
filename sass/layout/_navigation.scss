@@ -1,6 +1,6 @@
 .navigation {
     padding: 4rem;
-    border-bottom: 1px solid #7D7C78;
+    border-bottom: 1px solid $color-gray;
 
     display: flex;
     justify-content: space-between;
@@ -11,9 +11,17 @@
         align-items: center;
     }
 
+    .separator,
+    .phone-number {
+        
+        @media only screen and (max-width: 100em) {
+            display: none;
+        }
+    }
+
     &__right {
-        background-color: deeppink;
         display: flex;
+        align-items: center;
     }
 
     &__list {
@@ -21,7 +29,41 @@
         display: flex;
     }
 
+    &__element {
+        margin: 0 1.5rem;
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.4rem;
+        transition: color .3s;
+
+        &:hover {
+            color: $color-primary-dark;
+        }
+    }
+
+    &__link--highlighted,
+    &__link--highlighted:link,
+    &__link--highlighted:visited {
+        color: $color-primary-dark;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
     &__search {
-        margin: 0 2.8rem;
+        margin: 0 2rem;
+        cursor: pointer;
+    }
+
+    &__buttons {
+        width: 32rem;
+        display: flex;
+        justify-content: space-between;
     }
 }
