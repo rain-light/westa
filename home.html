@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 </head>
 <body>
+    <input type="checkbox" id="mobile" class="mobile__checkbox">
     <header class="header">
         <nav class="navigation">
             <div class="navigation__left">
@@ -25,6 +26,14 @@
                 </div>
             </div>
             <div class="navigation__right">
+                <div class="navigation__mobile">
+                    <label for="mobile" class="mobile__label">
+                        <div class="mobile__hamburger">
+                            <div class="mobile__hamburger-line"></div>
+                            <span class="mobile__hamburger-text">Menu</span>
+                        </div>
+                    </label>
+                </div>
                 <ul class="navigation__list">
                     <li class="navigation__element">
                         <a href="#" class="navigation__link">Banking</a>
@@ -60,5 +69,52 @@
             </div>
         </nav>
     </header>
+    <nav class="mobile">
+        <div class="mobile__content">
+            <label for="mobile" class="mobile__label">
+                <div class="mobile__close-btn"></div>
+            </label>
+            <div class="mobile__top">
+                <div class="logo logo--black">
+                    <img src="/img/logo-big.png" alt="Westa Logo" class="logo__image">
+                    <span class="logo__text">Westa Bank</span>
+                </div>
+                <div class="separator"></div>
+                <div class="phone-number phone-number--black">
+                    <svg class="icon icon--gray phone-number__icon">
+                        <use xlink:href="/img/sprite.svg#icon-phone"></use>
+                    </svg>
+                    <span class="phone-number__text">600-300-200</span>
+                </div>
+            </div>
+            <ul class="mobile__list">
+                <li class="mobile__element">
+                    <a href="#" class="mobile__link">Banking</a>
+                </li>
+                <li class="mobile__element">
+                    <a href="#" class="mobile__link">Credit Cards</a>
+                </li>
+                <li class="mobile__element">
+                    <a href="#" class="mobile__link">Lending</a>
+                </li>
+                <li class="mobile__element">
+                    <a href="#" class="mobile__link">Investing</a>
+                </li>
+                <li class="mobile__element">
+                    <a href="#" class="mobile__link">Business</a>
+                </li>
+                <li class="mobile__element">
+                    <a href="#" class="mobile__link">Services</a>
+                </li>
+                <li class="mobile__element">
+                    <a href="#" class="mobile__link mobile__link--highlighted">Mobile App</a>
+                </li>
+            </ul>
+            <div class="mobile__buttons">
+                <a href="#" class="btn btn--transparent">Sign In</a>
+                <a href="#" class="btn btn--primary">Sign Up</a>
+            </div>
+        </div>
+    </nav>
 </body>
 </html>

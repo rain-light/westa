@@ -13,6 +13,10 @@
         color: #fff;
         font-size: 2rem;
     }
+
+    &--black &__text {
+        color: #000;
+    }
 }
 
 /* SEPARATOR COMPONENT */
@@ -33,5 +37,9 @@
 
     &__text {
         color: #fff;
+    }
+
+    &--black &__text {
+        color: #000;
     }
 }

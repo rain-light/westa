@@ -24,9 +24,20 @@
         align-items: center;
     }
 
+    &__mobile {
+
+        @media only screen and (min-width: 79.375em) {
+            display: none;
+        }
+    }
+
     &__list {
         list-style: none;
         display: flex;
+
+        @media only screen and (max-width: 79.375em) {
+            display: none;
+        }
     }
 
     &__element {
@@ -66,4 +77,188 @@
         display: flex;
         justify-content: space-between;
     }
+
+    &__search,
+    &__buttons {
+
+        @include respond(phone) {
+            display: none;
+        }
+    }
+}
+
+/* MOBILE NAV */
+
+.mobile {
+    position: relative;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100vw);
+    transition: visibility 0s .5s, opacity 0s .5s, transform .3s .2s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__checkbox {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+    }
+
+    &__label {
+        cursor: pointer;
+    }
+
+    & &__label {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
+    
+    &__hamburger {
+        width: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__hamburger-line {
+        width: 16px;
+        height: 2px;
+        background-color: #fff;
+        position: relative;
+
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: inherit;
+            position: absolute;
+            left: 0;
+        }
+
+        &::before {
+            bottom: 4px;
+        }
+
+        &::after {
+            top: 4px;
+        }
+    }
+
+    &__hamburger-text {
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    @media only screen and (min-width: 79.375em) {
+        display: none;
+    }
+
+    &__content {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .2s, visibility .2s;
+        
+        width: 80%;
+        height: 80%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__close-btn {
+        width: 15px;
+        height: 1px;
+        background-color: #000;
+        transform-origin: top left;
+        transform: rotate(45deg);
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: inherit;
+            transform: rotate(-90deg);
+        }
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__element {
+        margin: 2rem 0;
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        font-size: 3rem;
+        color: inherit;
+        transition: color .3s;
+
+        &:hover {
+            color: $color-primary-dark;
+        }
+    }
+
+    &__link--highlighted,
+    &__link--highlighted:link,
+    &__link--highlighted:visited {
+        color: $color-primary-dark;
+        transition: color .3s;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    &__buttons {
+        width: 33rem;
+        display: flex;
+        justify-content: space-between;
+
+        .btn--transparent {
+            color: #000;
+        }
+    }
+}
+
+/* CHECKBOX HACK */
+
+.mobile__checkbox:checked ~ .mobile {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.mobile__checkbox:checked ~ .mobile .mobile__content {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .2s .3s, visibility .2s .3s;
 }
