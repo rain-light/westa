@@ -17,14 +17,19 @@
         align-items: center;
 
         @include respond(phone) {
-            margin: 6rem auto;
+            margin: 4rem auto;
         }
     }
 
     &__text {
+        flex: 0 0 70%;
 
         .heading-6 {
             margin: 3rem 0;
         }
+    }
+
+    &__slider {
+        flex: 0 0 10rem;
     }
 }

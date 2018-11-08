@@ -43,3 +43,31 @@
         color: #000;
     }
 }
+
+/* SLIDER */
+.slider {
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid;
+    border-color: $color-primary-dark $color-gray $color-gray $color-gray;
+    border-radius: 50%;
+    transform: rotate(45deg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__numbers {
+        transform: rotate(-45deg);
+    }
+
+    &__current {
+        color: $color-primary-dark;
+        font-size: 3.5rem;
+        font-weight: 300;
+    }
+
+    &__total {
+        color: #fff;
+    }
+}

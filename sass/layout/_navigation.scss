@@ -212,6 +212,10 @@
 
     &__element {
         margin: 2rem 0;
+
+        @media only screen and (min-aspect-ratio: 71/70) and (max-height: 22.8125em) {
+            margin: 1rem 0;
+        }
     }
 
     &__link,
@@ -226,8 +230,8 @@
             color: $color-primary-dark;
         }
 
-        @media only screen and (orientation: landscape) {
-            font-size: 2rem;
+        @media only screen and (min-aspect-ratio: 71/70) and (max-height: 29.375em) {
+            font-size: 1.6rem;
         }
     }
 
