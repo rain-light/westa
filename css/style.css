@@ -48,6 +48,27 @@ body {
   font-family: 'Metropolis', sans-serif;
 }
 
+.heading-1 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 5rem;
+}
+
+.heading-6 {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 300;
+}
+
+.text-primary {
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#BFE428), to(#15D0AC));
+  background-image: linear-gradient(to right, #BFE428, #15D0AC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 700;
+}
+
 /* Font weight classes */
 .u-text-100 {
   font-weight: 100 !important;
@@ -126,7 +147,7 @@ body {
 .btn,
 .btn:link,
 .btn:visited {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -218,6 +239,30 @@ body {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/img/header.png);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/header.png);
   }
+}
+
+.header__content {
+  width: 80%;
+  margin: 10rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header__content {
+    margin: 6rem auto;
+  }
+}
+
+.header__text .heading-6 {
+  margin: 3rem 0;
 }
 
 .navigation {
