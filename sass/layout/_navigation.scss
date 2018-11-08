@@ -102,6 +102,7 @@
     transform: translateX(100vw);
     transition: visibility 0s .5s, opacity 0s .5s, transform .3s .2s ease-in-out;
 
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,6 +224,10 @@
 
         &:hover {
             color: $color-primary-dark;
+        }
+
+        @media only screen and (orientation: landscape) {
+            font-size: 2rem;
         }
     }
 

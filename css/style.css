@@ -539,6 +539,12 @@ body {
   color: #15D0AC;
 }
 
+@media only screen and (orientation: landscape) {
+  .mobile__link, .mobile__link:link, .mobile__link:visited {
+    font-size: 2rem;
+  }
+}
+
 .mobile__link--highlighted, .mobile__link--highlighted:link, .mobile__link--highlighted:visited {
   color: #15D0AC;
   -webkit-transition: color .3s;
