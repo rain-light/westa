@@ -46,6 +46,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Metropolis', sans-serif;
+  color: #2D3B3E;
 }
 
 .heading-1 {
@@ -177,6 +178,183 @@ body {
 
 .slider__total {
   color: #fff;
+}
+
+.cards {
+  position: relative;
+  bottom: 7rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cards {
+    bottom: auto;
+  }
+}
+
+.cards__card {
+  width: 40rem;
+  height: 16rem;
+  -webkit-box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .cards__card {
+    width: 30rem;
+    height: 14rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cards__card {
+    width: 40rem;
+    margin: 4rem auto;
+    position: relative;
+    left: auto !important;
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+}
+
+.cards__card--1 {
+  left: 50%;
+  -webkit-transform: translateX(-125%);
+          transform: translateX(-125%);
+  background-image: url(/img/westa-support-program.png);
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: 34% 30%;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cards__card--1 {
+    background-position: 45% 30%;
+  }
+}
+
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .cards__card--1 {
+    -webkit-transform: translateX(-130%);
+            transform: translateX(-130%);
+  }
+}
+
+@media only screen and (min-width: 37.5em) {
+  .cards__card--1 span {
+    position: relative;
+    right: 15%;
+  }
+}
+
+.cards__card--2 {
+  height: 20rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, -10%);
+          transform: translate(-50%, -10%);
+  z-index: 1;
+  top: -55%;
+}
+
+.cards__card--2 .btn {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.cards__card--3 {
+  left: 50%;
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%);
+  background-image: url(/img/explore-the-way.png);
+  background-size: 57%;
+  background-repeat: no-repeat;
+  background-position: 67% 46%;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .cards__card--3 {
+    background-position: 49% 46%;
+  }
+}
+
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .cards__card--3 {
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
+  }
+}
+
+@media only screen and (min-width: 37.5em) {
+  .cards__card--3 span {
+    position: relative;
+    left: 15%;
+  }
+}
+
+.cards__card--2 .cards__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  bottom: 2%;
+}
+
+.cards__card--2 .cards__content .cards__image {
+  width: 20%;
+}
+
+.cards__card--2 .cards__content .cards__big-heading {
+  margin: 1.5rem 0 .5rem 0;
+}
+
+.cards__heading, .cards__subheading, .cards__big-heading {
+  display: block;
+  text-align: center;
+}
+
+.cards__big-heading {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.cards__heading {
+  font-weight: 700;
+}
+
+.cards__subheading {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.cards__line {
+  width: 100%;
+  height: 3px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#BFE428), to(#15D0AC));
+  background-image: linear-gradient(to right, #BFE428, #15D0AC);
+  position: absolute;
+  bottom: 0;
 }
 
 .btn,
@@ -639,5 +817,9 @@ body {
   opacity: 1;
   -webkit-transition: opacity .2s .3s, visibility .2s .3s;
   transition: opacity .2s .3s, visibility .2s .3s;
+}
+
+.section-cards {
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */
