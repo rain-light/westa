@@ -1,0 +1,111 @@
+.footer {
+
+    &__content {
+        padding: 5rem 15rem;
+
+        display: flex;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+        }
+    }
+
+    &__credits {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 2.5rem;
+        color: $color-gray-2;
+        border-top: 1px solid rgba($color-gray, .3);
+    }
+
+    &__contact {
+        flex-basis: 25%;
+
+        @include respond(tab-port) {
+            flex-basis: auto;
+        }
+    }
+
+    &__separator {
+        width: 5rem;
+        height: 1px;
+        margin: 2rem 0;
+        background-color: rgba($color-gray, .3);
+    }
+
+    &__links {
+        flex-basis: 75%;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-gap: 3rem;
+
+        @include respond(tab-port) {
+            flex-basis: auto;
+            margin-top: 5rem;
+        }
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    &__links-list {
+        list-style: none;
+    }
+
+    &__links-element {
+        margin: 1rem 0;
+    }
+
+    &__links-link,
+    &__links-link:link,
+    &__links-link:visited {
+        text-decoration: none;
+        color: $color-gray-2;
+        font-size: 1.2rem;
+    }
+
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 90%;
+    }
+
+    &__contact-group {
+        
+        & > *:first-child {
+            margin-bottom: 3.5rem;
+        }
+    }
+
+    &__contact-line {
+        display: flex;
+        align-items: center;
+    }
+
+    &__contact-icon {
+        width: 1.3rem;
+        height: 1.3rem;
+        fill: $color-primary;
+        margin-right: .7rem;
+    }
+
+    &__contact-text {
+        font-size: 1.3rem;
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+        width: 12rem;
+    }
+
+    &__socials-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+}

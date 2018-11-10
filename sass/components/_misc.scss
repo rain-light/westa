@@ -17,6 +17,10 @@
     &--black &__text {
         color: #000;
     }
+
+    &--gray &__text {
+        color: $color-gray-2;
+    }
 }
 
 /* SEPARATOR COMPONENT */
