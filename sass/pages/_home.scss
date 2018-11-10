@@ -1,3 +1,24 @@
 .section-cards {
     position: relative;
 }
+
+.section-title {
+    margin-top: 16rem;
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/logo-products.png);
+    background-size: 35rem;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include respond(phone) {
+        margin-top: 5vw;
+        background-size: 60%;
+    }
+}
+
+.section-features {
+    padding-bottom: 8rem;
+}

@@ -71,3 +71,37 @@
         color: #fff;
     }
 }
+
+/* LINKS BAR */
+
+.links-bar {
+    background-color: $color-gray-light;
+
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+
+        @include respond(phone) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__element {
+        margin: 2.5rem 0;
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: inherit;
+        font-size: 1.3rem;
+        transition: color .3s;
+
+        &:hover {
+            color: $color-primary-dark;
+        }
+    }
+}
