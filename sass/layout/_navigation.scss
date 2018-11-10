@@ -91,7 +91,7 @@
 
 .mobile {
     position: relative;
-    z-index: 100;
+    z-index: 1000;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -253,8 +253,10 @@
 
         .btn--transparent {
             color: #000;
+            border-color: inherit;
         }
     }
+    
 }
 
 /* CHECKBOX HACK */
